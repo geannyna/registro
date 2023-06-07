@@ -8,11 +8,14 @@
     body{
       margin-top: 5rem;
     }
-    label, input, h1, button{
+    label, input, h1{
       display: block;
       margin: 0.5rem 1rem 0rem 5rem;
-      
-    }
+    }  
+    #register-btn{
+      display: none;
+    } 
+    
   </style>
   <h1>Registro de cuenta de usuario</h1>
   <form>
@@ -30,7 +33,7 @@
       <label for="confirm-password">Repetir contraseña:</label>
       <input type="password" id="confirm-password" required>
     </div>
-    <p id="error-message1">Las contraseñas no coinciden</p>
+    <p id="password-message">Las contraseñas no coinciden</p>
     <div>
       <button id="register-btn" type="button">Registrarse</button>
     </div>
